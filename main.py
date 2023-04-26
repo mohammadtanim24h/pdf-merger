@@ -12,6 +12,7 @@ for filename in os.listdir('.'):
 
 pdfFiles.sort(key=str.lower)
 
+# Merging the pdfs
 for filename in pdfFiles:
     pdfFile = open(filename, 'rb')
     pdfReader = PyPDF2.PdfReader(pdfFile)
